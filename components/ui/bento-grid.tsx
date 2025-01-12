@@ -52,8 +52,6 @@ export const BentoGridItem = ({
   title,
   description,
   img,
-  imgClassName,
-  tileClassName,
   id,
 }: {
   className?: string;
