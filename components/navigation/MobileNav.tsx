@@ -10,7 +10,13 @@ const MobileNav = () => {
   const [isActive, setIsActive] = useState(false);
   return (
     <nav className='sm:hidden flex items-center'>
-      <Image src='/logo.svg' width={80} height={80} alt='Musawir Logo' />
+      <Image
+        src='/logo.svg'
+        width={80}
+        height={80}
+        alt='Musawir Logo'
+        priority
+      />
       <div className={styles.header}>
         <div className={styles.button} onClick={() => setIsActive(!isActive)}>
           <div
