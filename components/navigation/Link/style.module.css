@@ -1,0 +1,22 @@
+.link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+
+  .indicator {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: -15px;
+  }
+}
+.linkText {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+  position: relative;
+  z-index: 1;
+}
