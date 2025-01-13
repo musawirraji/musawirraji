@@ -1,0 +1,17 @@
+.parallaxContainer {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.parallaxSlide {
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .parallaxSlide {
+    transition: none;
+    animation: none;
+  }
+}

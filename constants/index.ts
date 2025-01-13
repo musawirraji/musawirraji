@@ -120,3 +120,111 @@ export const testimonials = [
     title: 'CTO NUPAT Tech.',
   },
 ];
+
+export const firstRowImages = [
+  {
+    img: 'sample-min.png',
+    alt: 'project 1',
+    title: 'Hotel Booking Platform',
+    description: 'A streamlined booking experience',
+  },
+  {
+    img: 'sample-min.png',
+    alt: 'project 2',
+    title: 'Oracle NetSuite',
+    description: 'Enterprise solutions',
+  },
+  {
+    img: 'sample-min.png',
+    alt: 'project 1',
+    title: 'Hotel Booking Platform',
+    description: 'A streamlined booking experience',
+  },
+  {
+    img: 'sample-min.png',
+    alt: 'project 2',
+    title: 'Oracle NetSuite',
+    description: 'Enterprise solutions',
+  },
+  {
+    img: 'sample-min.png',
+    alt: 'project 1',
+    title: 'Hotel Booking Platform',
+    description: 'A streamlined booking experience',
+  },
+  {
+    img: 'sample-min.png',
+    alt: 'project 2',
+    title: 'Oracle NetSuite',
+    description: 'Enterprise solutions',
+  },
+  {
+    img: 'sample-min.png',
+    alt: 'project 1',
+    title: 'Hotel Booking Platform',
+    description: 'A streamlined booking experience',
+  },
+  {
+    img: 'sample-min.png',
+    alt: 'project 2',
+    title: 'Oracle NetSuite',
+    description: 'Enterprise solutions',
+  },
+];
+
+export const secondRowImages = [
+  {
+    img: 'sample-min.png',
+    alt: 'project 3',
+    title: 'Business Analytics',
+    description: 'Data visualization',
+  },
+  {
+    img: 'sample-min.png',
+    alt: 'project 4',
+    title: 'E-commerce Solution',
+    description: 'B2B platform',
+  },
+  {
+    img: 'sample-min.png',
+    alt: 'project 3',
+    title: 'Business Analytics',
+    description: 'Data visualization',
+  },
+  {
+    img: 'sample-min.png',
+    alt: 'project 4',
+    title: 'E-commerce Solution',
+    description: 'B2B platform',
+  },
+  {
+    img: 'sample-min.png',
+    alt: 'project 3',
+    title: 'Business Analytics',
+    description: 'Data visualization',
+  },
+  {
+    img: 'sample-min.png',
+    alt: 'project 4',
+    title: 'E-commerce Solution',
+    description: 'B2B platform',
+  },
+  {
+    img: 'sample-min.png',
+    alt: 'project 3',
+    title: 'Business Analytics',
+    description: 'Data visualization',
+  },
+  {
+    img: 'sample-min.png',
+    alt: 'project 4',
+    title: 'E-commerce Solution',
+    description: 'B2B platform',
+  },
+];
+export interface ImageType {
+  img: string;
+  title: string;
+  description: string;
+  alt: string;
+}
