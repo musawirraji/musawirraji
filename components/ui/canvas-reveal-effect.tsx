@@ -4,7 +4,6 @@ import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import React, { useMemo, useRef } from 'react';
 import * as THREE from 'three';
 
-// Define more specific types for uniforms
 type UniformValue = number[] | number[][] | number;
 type UniformType =
   | 'uniform1f'
@@ -31,6 +30,32 @@ interface PreparedUniforms {
   [key: string]: PreparedUniform;
 }
 
+class ErrorBoundary extends React.Component<
+  { children: React.ReactNode; onError?: () => void },
+  { hasError: boolean }
+> {
+  constructor(props: { children: React.ReactNode; onError?: () => void }) {
+    super(props);
+    this.state = { hasError: false };
+  }
+
+  static getDerivedStateFromError() {
+    return { hasError: true };
+  }
+
+  componentDidCatch(error: Error) {
+    console.error('WebGL Error:', error);
+    this.props.onError?.();
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return null;
+    }
+    return this.props.children;
+  }
+}
+
 // Rest of the component types remain the same
 export const CanvasRevealEffect = ({
   animationSpeed = 0.4,
@@ -47,23 +72,43 @@ export const CanvasRevealEffect = ({
   dotSize?: number;
   showGradient?: boolean;
 }) => {
+  const [hasError, setHasError] = React.useState(false);
+
+  if (typeof window !== 'undefined' && !window.WebGL2RenderingContext) {
+    return (
+      <div className={cn('h-full relative w-full', containerClassName)}>
+        <div className='absolute inset-0 bg-gradient-to-b from-emerald-500/20 to-emerald-500/40' />
+      </div>
+    );
+  }
+
+  if (hasError) {
+    return (
+      <div className={cn('h-full relative w-full', containerClassName)}>
+        <div className='absolute inset-0 bg-gradient-to-b from-emerald-500/20 to-emerald-500/40' />
+      </div>
+    );
+  }
+
   return (
     <div className={cn('h-full relative bg-white w-full', containerClassName)}>
       <div className='h-full w-full'>
-        <DotMatrix
-          colors={colors ?? [[0, 255, 255]]}
-          dotSize={dotSize ?? 3}
-          opacities={
-            opacities ?? [0.3, 0.3, 0.3, 0.5, 0.5, 0.5, 0.8, 0.8, 0.8, 1]
-          }
-          shader={`
+        <ErrorBoundary onError={() => setHasError(true)}>
+          <DotMatrix
+            colors={colors ?? [[0, 255, 255]]}
+            dotSize={dotSize ?? 3}
+            opacities={
+              opacities ?? [0.3, 0.3, 0.3, 0.5, 0.5, 0.5, 0.8, 0.8, 0.8, 1]
+            }
+            shader={`
               float animation_speed_factor = ${animationSpeed.toFixed(1)};
               float intro_offset = distance(u_resolution / 2.0 / u_total_size, st2) * 0.01 + (random(st2) * 0.15);
               opacity *= step(intro_offset, u_time * animation_speed_factor);
               opacity *= clamp((1.0 - step(intro_offset + 0.1, u_time * animation_speed_factor)) * 1.25, 1.0, 1.25);
             `}
-          center={['x', 'y']}
-        />
+            center={['x', 'y']}
+          />
+        </ErrorBoundary>
       </div>
       {showGradient && (
         <div className='absolute inset-0 bg-gradient-to-t from-gray-950 to-[84%]' />
@@ -312,8 +357,51 @@ interface ShaderProps {
 }
 
 const Shader: React.FC<ShaderProps> = ({ source, uniforms, maxFps = 60 }) => {
+  const [hasError, setHasError] = React.useState(false);
+
+  React.useEffect(() => {
+    const handleContextLost = (event: Event) => {
+      event.preventDefault();
+      setHasError(true);
+      console.warn('WebGL context was lost');
+    };
+
+    const handleContextRestored = () => {
+      setHasError(false);
+      console.log('WebGL context was restored');
+    };
+
+    const canvas = document.querySelector('canvas');
+    canvas?.addEventListener('webglcontextlost', handleContextLost);
+    canvas?.addEventListener('webglcontextrestored', handleContextRestored);
+
+    return () => {
+      canvas?.removeEventListener('webglcontextlost', handleContextLost);
+      canvas?.removeEventListener(
+        'webglcontextrestored',
+        handleContextRestored
+      );
+    };
+  }, []);
+
+  if (hasError) {
+    return (
+      <div className='absolute inset-0 bg-gradient-to-b from-emerald-500/20 to-emerald-500/40' />
+    );
+  }
+
   return (
-    <Canvas className='absolute inset-0 h-full w-full'>
+    <Canvas
+      className='absolute inset-0 h-full w-full'
+      gl={{
+        powerPreference: 'high-performance',
+        alpha: true,
+        antialias: true,
+        stencil: false,
+        depth: false,
+        failIfMajorPerformanceCaveat: false,
+      }}
+    >
       <ShaderMaterial source={source} uniforms={uniforms} maxFps={maxFps} />
     </Canvas>
   );
