@@ -18,7 +18,7 @@ export default function Parallax() {
 
   return (
     <main className='overflow-hidden'>
-      <div className='h-[10vh]' />
+      <div className='h-[5vh]' />
       <div ref={container} className={styles.parallaxContainer}>
         <Slide
           direction='left'
@@ -33,7 +33,7 @@ export default function Parallax() {
           images={secondRowImages}
         />
       </div>
-      <div className='h-[10vh]' />
+      <div className='h-[5vh]' />
     </main>
   );
 }

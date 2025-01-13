@@ -28,7 +28,7 @@ export function Slide({ direction, progress, left, images }: SlideProps) {
         willChange: 'transform',
         transform: 'translateZ(0)',
       }}
-      className={`relative flex whitespace-nowrap gap-4 py-10 ${styles.parallaxSlide}`}
+      className={`relative flex whitespace-nowrap gap-2 py-5 ${styles.parallaxSlide}`}
     >
       {images.map((image, index) => (
         <div
