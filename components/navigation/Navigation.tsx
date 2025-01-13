@@ -9,17 +9,18 @@ const Navigation = () => {
     <nav className='px-4 hidden sm:block'>
       <ul className='w-full flex justify-between items-center'>
         <li className='whitespace-nowrap'>
-          <Link href='#about' className={linkClass}>
-            About
-          </Link>
-        </li>
-        <li className='whitespace-nowrap'>
           <Link href='#projects' className={linkClass}>
             Projects
           </Link>
         </li>
+        <li className='whitespace-nowrap'>
+          <Link href='#myapproach' className={linkClass}>
+            My Approach
+          </Link>
+        </li>
+
         <li>
-          <Link href='#/' className={linkClass}>
+          <Link href='#' className={linkClass}>
             <Image
               src='/logo.svg'
               width={100}

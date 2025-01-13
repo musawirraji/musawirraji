@@ -1,5 +1,6 @@
 import Approach from '@/components/Approach';
 import Clients from '@/components/Clients';
+import Footer from '@/components/Footer';
 import Grid from '@/components/Grid';
 import Hero from '@/components/Hero';
 import NavBar from '@/components/navigation/NavBar';
@@ -23,6 +24,7 @@ export default function Home() {
         <RecentProject />
         <Clients />
         <Approach />
+        <Footer />
       </div>
     </main>
   );
