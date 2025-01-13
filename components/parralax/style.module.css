@@ -1,12 +1,21 @@
 .parallaxContainer {
   perspective: 1000px;
   transform-style: preserve-3d;
+  position: relative;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
 }
 
 .parallaxSlide {
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+  position: relative;
+  display: flex;
+  white-space: nowrap;
+  gap: 0.5rem;
+  padding: 1.25rem 0;
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -8,7 +8,7 @@ import { Slide } from '@/components/parralax/slide';
 import styles from './style.module.css';
 
 export default function Parallax() {
-  const container = useRef<HTMLDivElement>(null);
+  const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,
     offset: ['start end', 'end start'],
@@ -17,12 +17,12 @@ export default function Parallax() {
   useLenisScroll();
 
   return (
-    <main className='overflow-hidden'>
+    <div className='relative w-screen overflow-hidden'>
       <div className='h-[5vh]' />
       <div ref={container} className={styles.parallaxContainer}>
         <Slide
           direction='left'
-          left='-40%'
+          left='-45%'
           progress={scrollYProgress}
           images={firstRowImages}
         />
@@ -34,6 +34,6 @@ export default function Parallax() {
         />
       </div>
       <div className='h-[5vh]' />
-    </main>
+    </div>
   );
 }
