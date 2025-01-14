@@ -55,35 +55,35 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: '3D Solar System Planets to Explore',
-    des: 'Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.',
+    title: 'Omnifood - Meal Delivery Service',
+    des: 'A modern landing page for a health-focused meal subscription service with intuitive navigation and engaging UI/UX.',
     img: '/p1.svg',
-    iconLists: ['/re.svg', '/tail.svg', '/ts.svg', '/three.svg', '/fm.svg'],
-    link: '/ui.earth.com',
+    iconLists: ['/webflow.svg'],
+    link: 'https://ominifood-chi.vercel.app/',
   },
   {
     id: 2,
-    title: 'Yoom - Video Conferencing App',
-    des: 'Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.',
+    title: 'DevFlow - Developer Q&A Platform',
+    des: 'A secure Stack Overflow-inspired platform for developers to ask questions, share knowledge, and find solutions.',
     img: '/p2.svg',
-    iconLists: ['/next.svg', '/tail.svg', '/ts.svg', '/stream.svg', '/c.svg'],
-    link: '/ui.yoom.com',
+    iconLists: ['/next.svg', '/re.svg', '/ts.svg', '/oauth.svg'],
+    link: 'https://github.com/KingMusawir/devflow',
   },
   {
     id: 3,
-    title: 'AI Image SaaS - Canva Application',
-    des: 'A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.',
+    title: 'FlyFirstForLess - Luxury Flight Booking',
+    des: 'A premium flight booking platform with integrated WhatsApp support and streamlined form submission for first-class reservations.',
     img: '/p3.svg',
-    iconLists: ['/re.svg', '/tail.svg', '/ts.svg', '/three.svg', '/c.svg'],
-    link: '/ui.aiimg.com',
+    iconLists: ['/next.svg', '/tail.svg', '/ts.svg'],
+    link: 'https://www.flyfirstforless.com/',
   },
   {
     id: 4,
-    title: 'Animated Apple Iphone 3D Website',
-    des: 'Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..',
+    title: 'The Wild Oasis - Hotel Management Dashboard',
+    des: 'A comprehensive hotel management dashboard built with React, featuring real-time booking tracking, user authentication, revenue analytics, and seamless check-in/check-out management. Includes dark mode support and interactive data visualization.',
     img: '/p4.svg',
-    iconLists: ['/next.svg', '/tail.svg', '/ts.svg', '/three.svg', '/gsap.svg'],
-    link: '/ui.apple.com',
+    iconLists: ['/re.svg', '/supabase.svg'],
+    link: 'https://the-wild-oasis-three-phi.vercel.app/',
   },
 ];
 
@@ -123,49 +123,40 @@ export const testimonials = [
 
 export const firstRowImages = [
   {
-    img: 'sample-min.png',
-    alt: 'project 1',
+    img: 'wildoasis.png',
+    alt: 'Dashboard',
     title: 'Hotel Booking Platform',
-    description: 'A streamlined booking experience',
   },
   {
-    img: 'sample-min.png',
+    img: '8ware.png',
+    alt: 'project 1',
+    title: '8ware landing page',
+  },
+
+  {
+    img: 'ominifood.png',
+    alt: 'project 3',
+    title: 'Ominifood',
+  },
+  {
+    img: 'wildoasis.png',
+    alt: 'Dashboard',
+    title: 'Hotel Booking Platform',
+  },
+  {
+    img: 'flyfirst.png',
     alt: 'project 2',
-    title: 'Oracle NetSuite',
+    title: 'FlyFirst For Less',
     description: 'Enterprise solutions',
   },
   {
-    img: 'sample-min.png',
-    alt: 'project 1',
-    title: 'Hotel Booking Platform',
-    description: 'A streamlined booking experience',
-  },
-  {
-    img: 'sample-min.png',
-    alt: 'project 2',
-    title: 'Oracle NetSuite',
+    img: 'devflow.png',
+    alt: 'project 2ominifood',
+    title: 'Devflow',
     description: 'Enterprise solutions',
   },
   {
-    img: 'sample-min.png',
-    alt: 'project 1',
-    title: 'Hotel Booking Platform',
-    description: 'A streamlined booking experience',
-  },
-  {
-    img: 'sample-min.png',
-    alt: 'project 2',
-    title: 'Oracle NetSuite',
-    description: 'Enterprise solutions',
-  },
-  {
-    img: 'sample-min.png',
-    alt: 'project 1',
-    title: 'Hotel Booking Platform',
-    description: 'A streamlined booking experience',
-  },
-  {
-    img: 'sample-min.png',
+    img: '8ware.png',
     alt: 'project 2',
     title: 'Oracle NetSuite',
     description: 'Enterprise solutions',
@@ -174,72 +165,56 @@ export const firstRowImages = [
 
 export const secondRowImages = [
   {
-    img: 'sample-min.png',
+    img: 'ominifood.png',
     alt: 'project 3',
-    title: 'Business Analytics',
-    description: 'Data visualization',
+    title: 'Ominifood',
   },
   {
-    img: 'sample-min.png',
+    img: '8ware.png',
     alt: 'project 4',
     title: 'E-commerce Solution',
     description: 'B2B platform',
   },
+
   {
-    img: 'sample-min.png',
-    alt: 'project 3',
-    title: 'Business Analytics',
-    description: 'Data visualization',
+    img: 'flyfirst.png',
+    alt: 'project 2',
+    title: 'FlyFirst For Less',
+    description: 'Enterprise solutions',
   },
   {
-    img: 'sample-min.png',
-    alt: 'project 4',
-    title: 'E-commerce Solution',
-    description: 'B2B platform',
+    img: 'devflow.png',
+    alt: 'project 2ominifood',
+    title: 'Devflow',
+    description: 'Enterprise solutions',
   },
   {
-    img: 'sample-min.png',
-    alt: 'project 3',
-    title: 'Business Analytics',
-    description: 'Data visualization',
-  },
-  {
-    img: 'sample-min.png',
-    alt: 'project 4',
-    title: 'E-commerce Solution',
-    description: 'B2B platform',
-  },
-  {
-    img: 'sample-min.png',
-    alt: 'project 3',
-    title: 'Business Analytics',
-    description: 'Data visualization',
-  },
-  {
-    img: 'sample-min.png',
-    alt: 'project 4',
-    title: 'E-commerce Solution',
-    description: 'B2B platform',
+    img: 'flyfirst.png',
+    alt: 'project 2',
+    title: 'FlyFirst For Less',
+    description: 'Enterprise solutions',
   },
 ];
 export interface ImageType {
   img: string;
   title: string;
-  description: string;
   alt: string;
 }
 
 export const socialMedia = [
   {
     id: 1,
-    img: '/git.svg',
+    img: '/upwork.svg',
+    link: 'https://www.upwork.com/fl/~01b4bcaf279408483b?mp_source=share',
   },
   {
     id: 2,
     img: '/twit.svg',
+    link: 'https://x.com/AbdulMusawir_',
   },
   {
     id: 3,
     img: '/link.svg',
+    link: 'https://www.linkedin.com/in/musawir-raji-94b08311b/',
   },
 ];

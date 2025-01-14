@@ -31,7 +31,7 @@ export function Slide({ direction, progress, left, images }: SlideProps) {
       {[...images, ...images].map((image, index) => (
         <div
           key={`${image.title}-${index}`}
-          className='relative w-[400px] h-[280px] rounded-xl overflow-hidden group cursor-pointer flex-shrink-0'
+          className='relative w-[600px] h-[380px] rounded-xl overflow-hidden group cursor-pointer flex-shrink-0'
         >
           <Image
             src={`/${image.img}`}
@@ -46,7 +46,6 @@ export function Slide({ direction, progress, left, images }: SlideProps) {
             <h3 className='text-2xl text-white font-semibold mb-3'>
               {image.title}
             </h3>
-            <p className='text-base text-gray-200'>{image.description}</p>
           </div>
         </div>
       ))}

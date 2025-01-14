@@ -17,7 +17,7 @@ export default function Parallax() {
   useLenisScroll();
 
   return (
-    <div className='relative w-screen overflow-hidden'>
+    <div className='relative w-screen overflow-hidden bg-[rgba(14,42,51,0.52)] my-20'>
       <div className='h-[5vh]' />
       <div ref={container} className={styles.parallaxContainer}>
         <Slide

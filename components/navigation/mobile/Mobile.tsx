@@ -15,8 +15,8 @@ interface MobileProps {
 
 const navItems = [
   {
-    title: 'About',
-    href: '#about',
+    title: 'My Approach',
+    href: '#myapproach',
   },
   {
     title: 'Projects',

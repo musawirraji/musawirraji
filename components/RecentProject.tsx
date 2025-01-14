@@ -17,14 +17,11 @@ const RecentProjects = () => {
             className='sm:h-[41rem] h-[30rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]'
             key={item.id}
           >
-            <PinContainer
-              title='/ui.aceternity.com'
-              href='https://twitter.com/mannupaaji'
-            >
+            <PinContainer title={item.title} href={item.link}>
               <div className='relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10'>
                 <div
                   className='relative w-full h-full overflow-hidden lg:rounded-3xl'
-                  style={{ backgroundColor: '#455925' }}
+                  style={{ backgroundColor: '#272727' }}
                 >
                   <img src='/bg.png' alt='bgimg' />
                 </div>
