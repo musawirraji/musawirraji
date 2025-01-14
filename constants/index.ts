@@ -123,76 +123,131 @@ export const testimonials = [
 
 export const firstRowImages = [
   {
-    img: 'wildoasis.png',
+    img: '/wildoasis.png',
     alt: 'Dashboard',
     title: 'Hotel Booking Platform',
   },
   {
-    img: '8ware.png',
+    img: '/8ware.png',
     alt: 'project 1',
     title: '8ware landing page',
   },
 
   {
-    img: 'ominifood.png',
+    img: '/ominifood.png',
     alt: 'project 3',
     title: 'Ominifood',
   },
   {
-    img: 'wildoasis.png',
+    img: '/wildoasis.png',
     alt: 'Dashboard',
     title: 'Hotel Booking Platform',
   },
   {
-    img: 'flyfirst.png',
+    img: '/flyfirst.png',
     alt: 'project 2',
     title: 'FlyFirst For Less',
-    description: 'Enterprise solutions',
   },
   {
-    img: 'devflow.png',
+    img: '/devflow.png',
     alt: 'project 2ominifood',
     title: 'Devflow',
-    description: 'Enterprise solutions',
   },
   {
-    img: '8ware.png',
+    img: '/8ware.png',
     alt: 'project 2',
     title: 'Oracle NetSuite',
-    description: 'Enterprise solutions',
+  },
+  {
+    img: '/wildoasis.png',
+    alt: 'Dashboard',
+    title: 'Hotel Booking Platform',
+  },
+  {
+    img: '/8ware.png',
+    alt: 'project 1',
+    title: '8ware landing page',
+  },
+
+  {
+    img: '/ominifood.png',
+    alt: 'project 3',
+    title: 'Ominifood',
+  },
+  {
+    img: '/wildoasis.png',
+    alt: 'Dashboard',
+    title: 'Hotel Booking Platform',
+  },
+  {
+    img: '/flyfirst.png',
+    alt: 'project 2',
+    title: 'FlyFirst For Less',
+  },
+  {
+    img: '/devflow.png',
+    alt: 'project 2ominifood',
+    title: 'Devflow',
+  },
+  {
+    img: '/8ware.png',
+    alt: 'project 2',
+    title: 'Oracle NetSuite',
   },
 ];
 
 export const secondRowImages = [
   {
-    img: 'ominifood.png',
+    img: '/ominifood.png',
     alt: 'project 3',
     title: 'Ominifood',
   },
   {
-    img: '8ware.png',
+    img: '/8ware.png',
     alt: 'project 4',
     title: 'E-commerce Solution',
-    description: 'B2B platform',
   },
 
   {
-    img: 'flyfirst.png',
+    img: '/flyfirst.png',
     alt: 'project 2',
     title: 'FlyFirst For Less',
-    description: 'Enterprise solutions',
   },
   {
-    img: 'devflow.png',
+    img: '/devflow.png',
     alt: 'project 2ominifood',
     title: 'Devflow',
-    description: 'Enterprise solutions',
   },
   {
-    img: 'flyfirst.png',
+    img: '/flyfirst.png',
     alt: 'project 2',
     title: 'FlyFirst For Less',
-    description: 'Enterprise solutions',
+  },
+  {
+    img: '/ominifood.png',
+    alt: 'project 3',
+    title: 'Ominifood',
+  },
+  {
+    img: '/8ware.png',
+    alt: 'project 4',
+    title: 'E-commerce Solution',
+  },
+
+  {
+    img: '/flyfirst.png',
+    alt: 'project 2',
+    title: 'FlyFirst For Less',
+  },
+  {
+    img: '/devflow.png',
+    alt: 'project 2ominifood',
+    title: 'Devflow',
+  },
+  {
+    img: '/flyfirst.png',
+    alt: 'project 2',
+    title: 'FlyFirst For Less',
   },
 ];
 export interface ImageType {

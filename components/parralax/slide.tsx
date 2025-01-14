@@ -1,3 +1,4 @@
+import { memo, useMemo } from 'react';
 import { motion, MotionValue, useTransform } from 'framer-motion';
 import Image from 'next/image';
 import { ImageType } from '@/constants';
@@ -10,7 +11,12 @@ interface SlideProps {
   images: ImageType[];
 }
 
-export function Slide({ direction, progress, left, images }: SlideProps) {
+export const Slide = memo(function Slide({
+  direction,
+  progress,
+  left,
+  images,
+}: SlideProps) {
   const directionValue = direction === 'left' ? -1 : 1;
   const translateX = useTransform(
     progress,
@@ -18,17 +24,9 @@ export function Slide({ direction, progress, left, images }: SlideProps) {
     [250 * directionValue, -250 * directionValue]
   );
 
-  return (
-    <motion.div
-      style={{
-        x: translateX,
-        left,
-        willChange: 'transform',
-        transform: 'translateZ(0)',
-      }}
-      className={`relative flex whitespace-nowrap gap-4 py-8 ${styles.parallaxSlide}`}
-    >
-      {[...images, ...images].map((image, index) => (
+  const memoizedImages = useMemo(
+    () =>
+      images.map((image, index) => (
         <div
           key={`${image.title}-${index}`}
           className='relative w-[600px] h-[380px] rounded-xl overflow-hidden group cursor-pointer flex-shrink-0'
@@ -36,7 +34,7 @@ export function Slide({ direction, progress, left, images }: SlideProps) {
           <Image
             src={`/${image.img}`}
             alt={image.alt}
-            className='object-cover transition-transform duration-500 group-hover:scale-105'
+            className='object-cover transition-transform duration-500 group-hover:scale-105 transform-cpu'
             fill
             sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
             priority={index < 2}
@@ -48,7 +46,19 @@ export function Slide({ direction, progress, left, images }: SlideProps) {
             </h3>
           </div>
         </div>
-      ))}
+      )),
+    [images]
+  );
+
+  return (
+    <motion.div
+      style={{
+        x: translateX,
+        left,
+      }}
+      className={`relative flex whitespace-nowrap gap-4 py-8 ${styles.parallaxSlide}`}
+    >
+      {memoizedImages}
     </motion.div>
   );
-}
+});

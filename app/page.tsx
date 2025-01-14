@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import Grid from '@/components/Grid';
 import Hero from '@/components/Hero';
 import NavBar from '@/components/navigation/NavBar';
+
 import Parralax from '@/components/parralax/Parralax';
 import RecentProject from '@/components/RecentProject';
 
