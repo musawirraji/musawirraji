@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Geist, Azeret_Mono as Geist_Mono } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from '@/context/provider';
+import StructuredData from '@/components/StructuredData';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -15,7 +16,53 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Musawir Raji's Portfolio",
-  description: 'A Webflow & Nextjs Developer',
+  description:
+    'Experienced Webflow & Next.js Developer specializing in creating responsive, performant websites and web applications.',
+  keywords: [
+    'Webflow',
+    'Next.js',
+    'React',
+    'Web Development',
+    'Frontend Development',
+  ],
+  authors: [{ name: 'Musawir Raji' }],
+  creator: 'Musawir Raji',
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://www.abdulmusawirdev.com',
+    siteName: "Musawir Raji's Portfolio",
+    title: "Musawir Raji's Portfolio - Webflow & Next.js Developer",
+    description:
+      'Experienced Webflow & Next.js Developer specializing in creating responsive, performant websites and web applications.',
+    images: [
+      {
+        url: 'https://www.abdulmusawirdev.com/logo.svg',
+        width: 1200,
+        height: 630,
+        alt: "Musawir Raji's Portfolio",
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Musawir Raji's Portfolio - Webflow & Next.js Developer",
+    description:
+      'Experienced Webflow & Next.js Developer specializing in creating responsive, performant websites and web applications.',
+    images: ['https://www.abdulmusawirdev.com/twit.svg'],
+    creator: '@AbdulMusawir_',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 export default function RootLayout({
@@ -37,6 +84,7 @@ export default function RootLayout({
         >
           {children}
         </ThemeProvider>
+        <StructuredData />
       </body>
     </html>
   );
