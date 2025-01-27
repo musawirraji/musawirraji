@@ -55,6 +55,14 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
+    title: 'BookWise',
+    des: 'BookWise is a book borrowing university library management solution.',
+    img: '/bookwise.png',
+    iconLists: ['/next.svg', '/tail.svg', '/ts.svg'],
+    link: 'https://university-library.pro/',
+  },
+  {
+    id: 2,
     title: 'Omnifood - Meal Delivery Service',
     des: 'A modern landing page for a health-focused meal subscription service with intuitive navigation and engaging UI/UX.',
     img: '/p1.svg',
@@ -62,21 +70,14 @@ export const projects = [
     link: 'https://ominifood-chi.vercel.app/',
   },
   {
-    id: 2,
+    id: 3,
     title: 'DevFlow - Developer Q&A Platform',
     des: 'A secure Stack Overflow-inspired platform for developers to ask questions, share knowledge, and find solutions.',
     img: '/p2.svg',
     iconLists: ['/next.svg', '/re.svg', '/ts.svg', '/oauth.svg'],
     link: 'https://github.com/KingMusawir/devflow',
   },
-  {
-    id: 3,
-    title: 'BookWise',
-    des: 'BookWise is a book borrowing university library management solution.',
-    img: '/bookwise.png',
-    iconLists: ['/next.svg', '/tail.svg', '/ts.svg'],
-    link: 'https://university-library.pro/',
-  },
+
   {
     id: 4,
     title: 'The Wild Oasis - Hotel Management Dashboard',
