@@ -71,11 +71,11 @@ export const projects = [
   },
   {
     id: 3,
-    title: 'FlyFirstForLess - Luxury Flight Booking',
-    des: 'A premium flight booking platform with integrated WhatsApp support and streamlined form submission for first-class reservations.',
-    img: '/p3.svg',
+    title: 'BookWise',
+    des: 'BookWise is a book borrowing university library management solution.',
+    img: '/bookwise.png',
     iconLists: ['/next.svg', '/tail.svg', '/ts.svg'],
-    link: 'https://www.flyfirstforless.com/',
+    link: 'https://university-library.pro/',
   },
   {
     id: 4,
@@ -265,7 +265,7 @@ export const socialMedia = [
   {
     id: 2,
     img: '/twit.svg',
-    link: 'https://x.com/AbdulMusawir_',
+    link: 'https://x.com/MusawirRaji',
   },
   {
     id: 3,
