@@ -80,11 +80,11 @@ export const projects = [
 
   {
     id: 4,
-    title: 'The Wild Oasis - Hotel Management Dashboard',
-    des: 'A comprehensive hotel management dashboard built with React, featuring real-time booking tracking, user authentication, revenue analytics, and seamless check-in/check-out management. Includes dark mode support and interactive data visualization.',
-    img: '/p4.svg',
-    iconLists: ['/re.svg', '/supabase.svg'],
-    link: 'https://the-wild-oasis-three-phi.vercel.app/',
+    title: 'Bean Scene - Coffee Shop Website',
+    des: 'An elegant Webflow website for a local coffee shop, showcasing premium coffee experiences, customer testimonials, and a welcoming digital presence. Highlights the unique coffee journey and brand story.',
+    img: '/p4.png',
+    iconLists: ['/webflow.svg'],
+    link: 'https://bean-scene-coffee.webflow.io/',
   },
 ];
 
