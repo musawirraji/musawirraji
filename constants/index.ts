@@ -84,7 +84,7 @@ export const projects = [
     des: 'An elegant Webflow website for a local coffee shop, showcasing premium coffee experiences, customer testimonials, and a welcoming digital presence. Highlights the unique coffee journey and brand story.',
     img: '/p4.png',
     iconLists: ['/webflow.svg'],
-    link: 'https://bean-scene-coffee.webflow.io/',
+    link: 'https://bearscene.webflow.io/',
   },
 ];
 
