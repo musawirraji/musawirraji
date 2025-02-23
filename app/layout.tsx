@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Musawir Raji's Portfolio",
   description:
-    'Experienced Webflow & Next.js Developer specializing in creating responsive, performant websites and web applications.',
+    'Experienced React, Webflow & Next.js Developer specializing in creating responsive, performant websites and web applications.',
   keywords: [
     'Webflow',
     'Next.js',
@@ -30,14 +30,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://www.abdulmusawirdev.com',
+    url: 'https://www.musawirraji.pro/',
     siteName: "Musawir Raji's Portfolio",
-    title: "Musawir Raji's Portfolio - Webflow & Next.js Developer",
+    title: "Musawir Raji's Portfolio - React, Webflow & Next.js Developer",
     description:
-      'Experienced Webflow & Next.js Developer specializing in creating responsive, performant websites and web applications.',
+      'Experienced React, Webflow & Next.js Developer specializing in creating responsive, performant websites and web applications.',
     images: [
       {
-        url: 'https://www.abdulmusawirdev.com/logo.svg',
+        url: 'https://www.musawirraji.pro/logo.svg',
         width: 1200,
         height: 630,
         alt: "Musawir Raji's Portfolio",
@@ -46,11 +46,11 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Musawir Raji's Portfolio - Webflow & Next.js Developer",
+    title: "Musawir Raji's Portfolio - React, Webflow & Next.js Developer",
     description:
-      'Experienced Webflow & Next.js Developer specializing in creating responsive, performant websites and web applications.',
-    images: ['https://www.abdulmusawirdev.com/twit.svg'],
-    creator: '@AbdulMusawir_',
+      'Experienced React, Webflow & Next.js Developer specializing in creating responsive, performant websites and web applications.',
+    images: ['https://www.musawirraji.pro/twit.svg'],
+    creator: '@MusawirRaji',
   },
   robots: {
     index: true,

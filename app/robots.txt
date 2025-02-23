@@ -1,13 +1,4 @@
-import { MetadataRoute } from 'next'
-
-export default function robots(): MetadataRoute.Robots {
-  return {
-    rules: {
-      userAgent: '*',
-      allow: '/',
-      disallow: '/private/',
-    },
-    sitemap: 'https://www.abdulmusawirdev.com/sitemap.xml',
-  }
-}
-
+User-agent: *
+Allow: /
+Disallow: /private/
+Sitemap: https://www.musawirraji.pro/sitemap.xml
