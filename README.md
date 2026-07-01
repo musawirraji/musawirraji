@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Musawir Raji
 
-## Getting Started
+**AI-Native Full-Stack Developer** — I build AI-powered products and automation end to end, and take full ownership of the outcome.
 
-First, run the development server:
+Most developers build exactly what you asked for. I build what the product actually needs. I help businesses capture leads they're losing, automate the manual work eating their team's time, and ship real web products in weeks instead of months.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### What I build
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **AI-powered SaaS** — RAG chatbots, LLM integrations, AI content and outreach tools
+- **Full-stack web apps** — dashboards, marketplaces, multi-tenant platforms
+- **Automation pipelines** — n8n workflows, internal tools, systems that run themselves
+- **Secure backends** — multi-tenant Postgres with row-level security done right
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Selected work
 
-## Learn More
+- **VoxAnima** — production RAG chatbot grounded in an author's real work, answers accurately instead of hallucinating
+- **Lisi.no** — full-stack platform for 50+ car dealerships across Norway, thousands of listings, real-time filtering
+- **The Framework** — secure multi-tenant SaaS with row-level security on every table
+- **Replyte** — real-estate speed-to-lead system that answers and qualifies leads automatically
+- **PostPilot** — AI content SaaS shipped end to end for a US client
+- **ETnowe** — US marketplace with React Native apps
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Frontend** &nbsp;`Next.js` `React` `TypeScript` `Tailwind` `SCSS`
+**Backend** &nbsp;`Supabase` `PostgreSQL` `Node.js` `AWS`
+**AI** &nbsp;`Claude` `OpenAI` `Gemini` `pgvector` `RAG`
+**Automation** &nbsp;`n8n` `webhooks`
+**Daily** &nbsp;`Claude Code` `Cursor`
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Reach me
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+🌐 [forgedbyraji.com](https://forgedbyraji.com) &nbsp;·&nbsp; 💼 [LinkedIn](https://www.linkedin.com/in/musawir-raji) &nbsp;·&nbsp; ✉️ Send me the brief and I'll come back with how I'd solve it.
